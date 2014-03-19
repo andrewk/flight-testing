@@ -22,5 +22,9 @@
     "test": "karma start --single-run --browsers PhantomJS",
     "watch": "npm run server > server.log & npm run livereload",
     "watch-test": "karma start"
+  },
+  "dependencies": {
+    "requirejs": "~2.1.11",
+    "karma-requirejs": "~0.2.1"
   }
 }
