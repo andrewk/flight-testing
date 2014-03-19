@@ -1,0 +1,14 @@
+{
+  "name": "flight-testing",
+  "version": "0.0.0",
+  "description": "testing fligh components outside the monolith",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Krespanis",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "~1.3.1"
+  }
+}
