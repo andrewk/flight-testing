@@ -11,6 +11,8 @@ module.exports = function (config) {
     // base path, that will be used to resolve files and exclude
     basePath: '',
 
+    preprocessors: {},
+
     // frameworks to use
     frameworks: ['jasmine'],
 
@@ -31,7 +33,7 @@ module.exports = function (config) {
       {pattern: 'app/bower_components/flight/**/*.js', included: false},
       {pattern: 'app/js/**/*.js', included: false},
       {pattern: 'test/spec/**/*.spec.js', included: false},
-
+      {pattern: 'test/fixtures/**/*.html', included: false},
       'test/test-main.js'
     ],
 

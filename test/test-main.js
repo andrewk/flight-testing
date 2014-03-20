@@ -6,11 +6,13 @@ var tests = Object.keys(window.__karma__.files).filter(function (file) {
 
 requirejs.config({
   // Karma serves files from '/base'
-  baseUrl: '/base/app/bower_components',
+  baseUrl: '/base',
 
   paths: {
-    'component': '../js/component',
-    'page': '../js/page'
+    'component': 'app/js/component',
+    'page': 'app/js/page',
+    'flight': 'app/bower_components/flight',
+    'bower': 'app/bower_components'
   },
 
   // ask Require.js to load these files (all our tests)
@@ -19,3 +21,5 @@ requirejs.config({
   // start test run, once Require.js is done
   callback: window.__karma__.start
 });
+
+jasmine.getFixtures().fixturesPath = 'base/test/fixtures';
